@@ -1,0 +1,30 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.format",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.quickOpen"
+    }
+]
