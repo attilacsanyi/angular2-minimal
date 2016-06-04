@@ -12,7 +12,12 @@ declare var __moduleName: string;
   ]
 })
 export class AppComponent implements OnInit {
+  
+  title: string;
+  
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.title = 'Hello Angular!';
+  }
 }
