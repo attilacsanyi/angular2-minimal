@@ -5,13 +5,13 @@ import {HTTP_PROVIDERS} from '@angular/http';
 declare var __moduleName: string;
 @Component({
   moduleId: __moduleName,
-  selector: 'my-test-component',
-  template: `<h1>Hello Angular2</h1>`,
+  selector: 'my-app-component',
+  templateUrl: 'app.component.html',
   providers: [
     ROUTER_PROVIDERS, HTTP_PROVIDERS
   ]
 })
-export class TestComponent implements OnInit {
+export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
