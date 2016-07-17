@@ -18,6 +18,6 @@ export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.title = 'Hello Angular!';
+    this.title = 'Hello Angular 2 !';
   }
 }
