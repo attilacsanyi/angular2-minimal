@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <h1>Counters</h1>
+    <small>Sample counter app with @ngrx/store State Management</small>
+  </div>
+
+  <div>
+    <div class="row">
+
+      <div class="col-sm-4">
+        <form role="form">
+          <div class="form-group">
+            <input placeholder="amount" [(ngModel)]="amount" class="form-control" />
+          </div>
+        </form>
+
+        <button (click)="increment()" class="btn btn-xs btn-primary">Increment</button>
+        <button (click)="decrement()" class="btn btn-xs btn-primary">Decrement</button>
+        <button (click)="reset()" class="btn btn-xs btn-primary">Reset</button>
+        <p>Current Count: {{ counter | async }}</p>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -34,7 +34,8 @@
     'node_modules/ng2-bootstrap': { defaultExtension: 'js' },
     '@ngrx/core': { main: 'index.js', defaultExtension: 'js' },
     '@ngrx/store': { main: 'index.js', defaultExtension: 'js' },
-    //'@ngrx/devtools': { main: 'dist/index.js', defaultExtension: 'js' }
+    '@ngrx/store-devtools': { main: 'index.js', defaultExtension: 'js' },
+    '@ngrx/store-log-monitor': { main: 'index.js', defaultExtension: 'js' }
   };
 
   var ngPackageNames = [

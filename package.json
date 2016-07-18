@@ -36,8 +36,9 @@
     "jquery": "3.1.0",
     
     "@ngrx/core": "1.0.0",
-    "@ngrx/devtools": "1.4.0",
-    "@ngrx/store": "2.0.0"
+    "@ngrx/store-devtools": "2.0.0-beta.1",
+    "@ngrx/store-log-monitor": "^2.0.0-beta.1",
+    "@ngrx/store": "2.0.1"
   },
   "devDependencies": {
     "concurrently": "2.2.0",
