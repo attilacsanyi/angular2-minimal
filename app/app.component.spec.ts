@@ -24,7 +24,7 @@ describe('AppComponent', () => {
   it('should have app title of "Hello Angular2!"',
     inject([AppComponent], (component: AppComponent) => {
       component.ngOnInit();
-      expect(component.title).toEqual('Hello Angular!');
+      expect(component.title).toEqual('Hello Angular 2 !');
     })
   );
 
