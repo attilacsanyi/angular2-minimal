@@ -11,7 +11,6 @@
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs': 'node_modules/rxjs',
 
-    'ng2-bootstrap': 'node_modules/ng2-bootstrap/ng2-bootstrap',
     'moment': 'node_modules/moment/moment.js',
 
     // https://github.com/ngrx/devtools
@@ -21,7 +20,10 @@
     //'@ngrx/core': 'node_modules/@ngrx/core',
     //'@ngrx/store': 'node_modules/@ngrx/store',
 
-    '@ngrx': 'node_modules/@ngrx'
+    '@ngrx': 'node_modules/@ngrx',
+
+    // https://medium.com/front-end-hacking/getting-started-using-angular-material-2-in-an-angular-2-angular-cli-application-bbeecdf6bfe2#.dg3n1qkzi
+    '@angular2-material': 'node_modules/@angular2-material'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -31,12 +33,25 @@
     'rxjs': { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
 
-    'node_modules/ng2-bootstrap': { defaultExtension: 'js' },
     '@ngrx/core': { main: 'index.js', defaultExtension: 'js' },
     '@ngrx/store': { main: 'index.js', defaultExtension: 'js' },
     '@ngrx/store-devtools': { main: 'index.js', defaultExtension: 'js' },
     '@ngrx/store-log-monitor': { main: 'index.js', defaultExtension: 'js' }
   };
+
+  // put the names of any of your Material components here
+  var materialPkgs = [
+    'core',
+    'button',
+    'card',
+    'icon',
+    'toolbar',
+    'input',
+  ];
+
+  materialPkgs.forEach((pkg) => {
+    packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js` };
+  });
 
   var ngPackageNames = [
     'common',

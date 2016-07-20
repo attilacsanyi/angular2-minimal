@@ -9,6 +9,5 @@
 
 ### Packages
 - angular2-in-memory-api
-- bootstrap + jquery
-- ng2-bootstrap
+- angular2-material
 - @ngrx/store, @ngrx/devtools

@@ -1,25 +1,28 @@
-<div>
-  <div>
-    <h1>Counters</h1>
-    <small>Sample counter app with @ngrx/store State Management</small>
-  </div>
+<md-card>
 
-  <div>
-    <div class="row">
+  <md-card-title>Counters</md-card-title>
+  <md-card-subtitle>@ngrx/store State Management</md-card-subtitle>
 
-      <div class="col-sm-4">
-        <form role="form">
-          <div class="form-group">
-            <input placeholder="amount" [(ngModel)]="amount" class="form-control" />
-          </div>
-        </form>
+  <md-card-content>
+    <form>
+      <md-input placeholder="Amount" [value]="amount"></md-input>
+    </form>
+    <p>Current Count: {{ counter | async }}</p>
+  </md-card-content>
 
-        <button (click)="increment()" class="btn btn-xs btn-primary">Increment</button>
-        <button (click)="decrement()" class="btn btn-xs btn-primary">Decrement</button>
-        <button (click)="reset()" class="btn btn-xs btn-primary">Reset</button>
-        <p>Current Count: {{ counter | async }}</p>
-      </div>
+  <md-card-actions>
 
-    </div>
-  </div>
-</div>
+    <button md-button color="primary" (click)="increment()">
+      <md-icon>add</md-icon>
+    </button>
+    <button md-button color="primary" (click)="decrement()">
+      <md-icon>remove</md-icon>
+    </button>
+
+    <button md-button color="warn" (click)="reset()">
+      <md-icon>restore</md-icon>
+    </button>
+
+  </md-card-actions>
+
+</md-card>

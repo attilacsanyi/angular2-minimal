@@ -1,0 +1,6 @@
+.example-fill-remaining-space {
+  /*
+   Every toolbar row uses a flexbox row layout.
+   This fills the remaining space, by using flexbox. */ 
+  flex: 1 1 auto;
+}
