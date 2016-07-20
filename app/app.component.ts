@@ -9,8 +9,9 @@ import {CounterComponent} from './counter/counter.component';
 import {STORE_PROVIDERS} from './core/states';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app-component',
-  templateUrl: 'app/app.component.html',
+  templateUrl: 'app.component.html',
   directives: [
     CounterComponent,
     StoreLogMonitorComponent

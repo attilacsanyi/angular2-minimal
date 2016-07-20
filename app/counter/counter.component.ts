@@ -6,9 +6,10 @@ import {AppState}  from '../core/states';
 import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from './counter.action';
 
 @Component({
+  moduleId: module.id,
   selector: 'counter',
-  templateUrl: 'app/counter/counter.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  templateUrl: 'counter.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CounterComponent implements OnInit {
 
