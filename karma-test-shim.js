@@ -31,23 +31,53 @@ var packages = {
 
 // Add angular packages to SystemJS config
 [
-  '@angular/common',
-  '@angular/compiler',
-  '@angular/core',
-  '@angular/http',
-  '@angular/platform-browser',
-  '@angular/platform-browser-dynamic',
-  '@angular/router',
-  '@angular/router-deprecated',
-  '@angular/upgrade'
-].forEach(function (name) { packages[name] = { main: 'index.js', defaultExtension: 'js' }; });
+  'common',
+  'compiler',
+  'core',
+  'forms',
+  'http',
+  'platform-browser',
+  'platform-browser-dynamic',
+  'router',
+  'router-deprecated',
+  'upgrade'
+].forEach((pkg) => {
+  packages[`@angular/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
+});
+
+// Add @ngrx packages to SystemJS config
+[
+  'core',
+  'store',
+  'store-devtools',
+  'store-log-monitor',
+].forEach((pkg) => {
+  packages[`@ngrx/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
+});
+
+// Add @angular2-material packages to SystemJS config
+[
+  'core',
+  'button',
+  'card',
+  'icon',
+  'toolbar',
+  'input',
+].forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js`, defaultExtension: 'js' };
+});
 
 System.config({
   baseURL: '/base',
   map: {
-    'rxjs': 'node_modules/rxjs',
+    'app': 'app',
+
     '@angular': 'node_modules/@angular',
-    'app': 'app'
+    'rxjs': 'node_modules/rxjs',
+
+    '@ngrx': '/base/node_modules/@ngrx',
+
+    '@angular2-material': '/base/node_modules/@angular2-material',
   },
   packages: packages
 });

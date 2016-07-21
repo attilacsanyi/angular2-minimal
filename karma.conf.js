@@ -44,6 +44,12 @@ module.exports = function (config) {
       { pattern: 'node_modules/@angular/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false },
 
+      // @ngrx.
+      { pattern: 'node_modules/@ngrx/**/*.js', included: false, watched: false },
+
+      // @ngular2-material.
+      { pattern: 'node_modules/@angular2-material/**/*.js', included: false, watched: false },
+
       'karma-test-shim.js',
 
       // transpiled application & spec code paths loaded via module imports
