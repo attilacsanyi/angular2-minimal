@@ -11,18 +11,8 @@
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs': 'node_modules/rxjs',
 
-    'moment': 'node_modules/moment/moment.js',
-
-    // https://github.com/ngrx/devtools
-    //'@ngrx/devtools': 'node_modules/@ngrx/devtools',
-
-    // https://github.com/ngrx/store
-    //'@ngrx/core': 'node_modules/@ngrx/core',
-    //'@ngrx/store': 'node_modules/@ngrx/store',
-
     '@ngrx': 'node_modules/@ngrx',
 
-    // https://medium.com/front-end-hacking/getting-started-using-angular-material-2-in-an-angular-2-angular-cli-application-bbeecdf6bfe2#.dg3n1qkzi
     '@angular2-material': 'node_modules/@angular2-material'
   };
 
@@ -32,25 +22,28 @@
 
     'rxjs': { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
-
-    '@ngrx/core': { main: 'index.js', defaultExtension: 'js' },
-    '@ngrx/store': { main: 'index.js', defaultExtension: 'js' },
-    '@ngrx/store-devtools': { main: 'index.js', defaultExtension: 'js' },
-    '@ngrx/store-log-monitor': { main: 'index.js', defaultExtension: 'js' }
   };
 
-  // put the names of any of your Material components here
-  var materialPkgs = [
+  // Add @ngrx packages to SystemJS config
+  [
+    'core',
+    'store',
+    'store-devtools',
+    'store-log-monitor',
+  ].forEach((pkg) => {
+    packages[`@ngrx/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
+  });
+
+  // Add @angular2-material packages to SystemJS config
+  [
     'core',
     'button',
     'card',
     'icon',
     'toolbar',
     'input',
-  ];
-
-  materialPkgs.forEach((pkg) => {
-    packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js` };
+  ].forEach((pkg) => {
+    packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js`, defaultExtension: 'js' };
   });
 
   var ngPackageNames = [
