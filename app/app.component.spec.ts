@@ -1,8 +1,7 @@
 import {
-  expect, it, iit, xit,
-  describe, ddescribe, xdescribe,
-  beforeEach, beforeEachProviders, withProviders,
-  async, inject
+  expect, it, describe,
+  // iit, xit, ddescribe, xdescribe,
+  beforeEach, beforeEachProviders, inject
 } from '@angular/core/testing';
 
 import {TestComponentBuilder} from '@angular/compiler/testing';

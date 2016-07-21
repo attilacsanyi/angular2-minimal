@@ -1,4 +1,4 @@
-import {Inject, Provider} from '@angular/core';
+import {Provider} from '@angular/core';
 import {provideStore} from '@ngrx/store';
 import {instrumentStore} from '@ngrx/store-devtools';
 import {useLogMonitor} from '@ngrx/store-log-monitor';

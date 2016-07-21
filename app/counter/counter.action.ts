@@ -1,4 +1,3 @@
-import {Action} from '@ngrx/store';
 import {BaseAction} from '../core/models';
 
 // Counter Actions
