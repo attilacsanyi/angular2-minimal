@@ -1,8 +1,15 @@
 <md-toolbar color="primary">
+  <button [routerLink]="['home']" md-button>
+    <md-icon>home</md-icon>
+  </button>
   <span>{{title}}</span>
+
   <!-- This fills the remaining space of the current row -->
   <span class="example-fill-remaining-space"></span>
-
+  
+  <button [routerLink]="['counter']" md-button>
+    <md-icon>format_list_numbered</md-icon>
+  </button>
   <span>Angular Material 2</span>
 </md-toolbar>
 

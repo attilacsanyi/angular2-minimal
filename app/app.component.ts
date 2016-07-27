@@ -6,6 +6,7 @@ import {StoreLogMonitorComponent} from '@ngrx/store-log-monitor';
 import {CounterComponent} from './counter/counter.component';
 
 import {MD_TOOLBAR_DIRECTIVES} from '@angular2-material/toolbar';
+import {MD_BUTTON_DIRECTIVES} from '@angular2-material/button';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
 // Providers
@@ -20,7 +21,7 @@ import {STORE_PROVIDERS} from './core/states';
     ROUTER_DIRECTIVES,
     CounterComponent,
     StoreLogMonitorComponent,
-    MD_TOOLBAR_DIRECTIVES,
+    MD_TOOLBAR_DIRECTIVES, MD_BUTTON_DIRECTIVES,
     MdIcon
   ],
   providers: [

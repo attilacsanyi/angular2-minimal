@@ -62,6 +62,7 @@ var packages = {
   'icon',
   'toolbar',
   'input',
+  'list'
 ].forEach((pkg) => {
   packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js`, defaultExtension: 'js' };
 });
