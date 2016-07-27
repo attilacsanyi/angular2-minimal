@@ -39,7 +39,6 @@ var packages = {
   'platform-browser',
   'platform-browser-dynamic',
   'router',
-  'router-deprecated',
   'upgrade'
 ].forEach((pkg) => {
   packages[`@angular/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
