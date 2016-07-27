@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 import {HTTP_PROVIDERS} from '@angular/http';
 import {StoreLogMonitorComponent} from '@ngrx/store-log-monitor';
 
@@ -17,13 +17,14 @@ import {STORE_PROVIDERS} from './core/states';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
   directives: [
+    ROUTER_DIRECTIVES,
     CounterComponent,
     StoreLogMonitorComponent,
     MD_TOOLBAR_DIRECTIVES,
     MdIcon
   ],
   providers: [
-    ROUTER_PROVIDERS, HTTP_PROVIDERS,
+    HTTP_PROVIDERS,
     STORE_PROVIDERS,
     MdIconRegistry
   ]

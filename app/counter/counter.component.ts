@@ -12,7 +12,6 @@ import {MdIcon} from '@angular2-material/icon';
 
 @Component({
   moduleId: module.id,
-  selector: 'counter',
   templateUrl: 'counter.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   directives: [
