@@ -26,5 +26,9 @@
     {
         "key": "ctrl+o",
         "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.toggleTerminal"
     }
 ]
