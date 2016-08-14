@@ -7,7 +7,6 @@ import {HttpModule} from '@angular/http';
 import {MdToolbarModule} from '@angular2-material/toolbar';
 import {MdButtonModule} from '@angular2-material/button';
 import {MdIconModule} from '@angular2-material/icon';
-import {CounterModule} from './counter/counter.module';
 import {HomeModule} from './home/home.module';
 
 // Components
@@ -25,7 +24,7 @@ import {routing} from './app.routing';
         BrowserModule, HttpModule,
         // Material
         MdToolbarModule, MdButtonModule, MdIconModule,
-        HomeModule, CounterModule,
+        HomeModule,
         routing,
     ],
     declarations: [
