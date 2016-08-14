@@ -1,17 +1,12 @@
-import {
-  expect, it, describe,
-  // iit, xit, ddescribe, xdescribe,
-  beforeEach, beforeEachProviders, inject
-} from '@angular/core/testing';
-
-import {TestComponentBuilder} from '@angular/compiler/testing';
+import {inject } from '@angular/core/testing';
+import {TestComponentBuilder, addProviders} from '@angular/core/testing';
 
 import {AppComponent} from './app.component';
 
 describe('AppComponent', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [AppComponent]);
+  beforeEach(() => addProviders([AppComponent]));
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) { builder = tcb; }));
 
   it('should inject the app component',
