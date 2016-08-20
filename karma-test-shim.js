@@ -57,12 +57,24 @@ var packages = {
 // Add @angular2-material packages to SystemJS config
 [
   'core',
+  'radio',
+  'menu',
   'button',
-  'card',
-  'icon',
+  'button-toggle',
+  'list',
+  'sidenav',
+  'checkbox',
   'toolbar',
+  'slider',
   'input',
-  'list'
+  'grid-list',
+  'icon',
+  'tabs',
+  'progress-bar',
+  'card',
+  'progress-circle',
+  'slide-toggle',
+  'tooltip',
 ].forEach((pkg) => {
   packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js`, defaultExtension: 'js' };
 });
