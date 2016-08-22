@@ -1,8 +1,7 @@
 import {NgModule} from '@angular/core';
 
 // Modules
-import {MdCardModule} from '@angular2-material/card';
-import {MdListModule} from '@angular2-material/list';
+import {SharedModule} from '../shared/shared.module';
 
 // Components
 import {HomeComponent} from './home.component';
@@ -10,13 +9,7 @@ import {HomeComponent} from './home.component';
 import {routing} from './home.routing';
 
 @NgModule({
-    imports: [
-        // Material
-        MdCardModule, MdListModule,
-        routing,
-    ],
-    declarations: [
-        HomeComponent,
-    ]
+    imports: [SharedModule, routing],
+    declarations: [HomeComponent]
 })
 export class HomeModule { }

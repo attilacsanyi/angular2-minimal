@@ -3,10 +3,7 @@ import {NgModule} from '@angular/core';
 
 // Modules
 import {BrowserModule} from '@angular/platform-browser';
-import {HttpModule} from '@angular/http';
-import {MdToolbarModule} from '@angular2-material/toolbar';
-import {MdButtonModule} from '@angular2-material/button';
-import {MdIconModule} from '@angular2-material/icon';
+import {SharedModule} from './shared/shared.module';
 import {HomeModule} from './home/home.module';
 
 // Components
@@ -21,11 +18,11 @@ import {routing} from './app.routing';
 @NgModule({
     imports: [
         // Angular
-        BrowserModule, HttpModule,
-        // Material
-        MdToolbarModule, MdButtonModule, MdIconModule,
+        BrowserModule,
+
         HomeModule,
         routing,
+        SharedModule.forRoot()
     ],
     declarations: [
         AppComponent,
