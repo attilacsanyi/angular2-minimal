@@ -6,7 +6,6 @@ app/**/*.js
 app/**/*.map
 
 # type definition
-typings
 app/**/*.d.ts
 
 # misc 
