@@ -7,9 +7,9 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 // Material
+import {MdIconModule, MdIconRegistry} from '@angular2-material/icon';
 import {MdToolbarModule} from '@angular2-material/toolbar';
 import {MdButtonModule} from '@angular2-material/button';
-import {MdIconModule} from '@angular2-material/icon';
 import {MdCardModule} from '@angular2-material/card';
 import {MdInputModule} from '@angular2-material/input';
 
@@ -23,6 +23,10 @@ import {MdInputModule} from '@angular2-material/input';
         // Material
         MdToolbarModule, MdButtonModule, MdIconModule,
         MdCardModule, MdInputModule,
+    ],
+    providers: [
+        // Material
+        MdIconRegistry
     ]
 })
 export class SharedModule {
